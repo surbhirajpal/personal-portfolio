@@ -1,0 +1,28 @@
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &-logo{
+        width: 10%;
+    }
+
+    &-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+
+    &-content__left, &-content__right, &-content-info{
+        display: flex;
+        align-items: center;
+    }
+
+    &-content-info{
+        &:not(:last-of-type){
+            margin-right: 24px;
+        }
+    }
+}

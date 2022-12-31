@@ -1,0 +1,43 @@
+@purple-dark : #82697e;
+@purple-light : #a16b7c;
+
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+
+    &-content{
+
+    }
+
+    &-title{
+        color: @purple-dark;
+        font-size: 48px;
+        margin-bottom: 16px;
+
+        p{
+            &:last-of-type{
+                margin-left: 20%;
+            }
+        }
+    }
+
+    &-subtitle{
+        line-height: 1.5;
+        font-size: 14px;
+        width: 80%;
+        text-transform: uppercase;
+        color: @purple-dark;
+        font-size: 16px;
+        margin-bottom: 40px;
+        
+    }
+
+    &-image{
+        text-align: center;
+        img{
+            width: 65%;
+        }
+    }
+}
