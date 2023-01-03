@@ -2,7 +2,6 @@ import {
     useRef,
     useState,
     useLayoutEffect,
-    useCallback,
     useEffect
 } from "react";
 
@@ -10,87 +9,72 @@ import {
     motion,
     useScroll,
     useTransform,
-    useSpring,
-    useMotionValue
 } from "framer-motion";
 
-import 'intersection-observer';
-import useScrollPercentage from 'react-scroll-percentage-hook';
+import Thumbnails from './Thumbnail';
 
+import AboutData from './AboutData.json';
 import './About.less';
 
 const About = () => {
+    const containerRef = useRef(null);
     const scrollRef = useRef(null);
-    const ghostRef = useRef(null);
-    const wrapperRef = useRef(null);
+
+    const { scrollY } = useScroll();
 
     const [scrollRange, setScrollRange] = useState(0);
-    const [viewportW, setViewportW] = useState(0);
-    const [scrollStart, setScrollStart] = useState(0)
-
-    const scrollPerc = useMotionValue(0);
-    const { scrollYProgress } = useScroll();
-
+    const [scrollStart, setScrollStart] = useState(0);
+    const [containerWidth, setContainerWidth] = useState(0);
 
     useLayoutEffect(() => {
         scrollRef && setScrollRange(scrollRef.current.scrollWidth);
-    }, [scrollRef]);
-
-    const onResize = useCallback((entries) => {
-        for (let entry of entries) {
-            setViewportW(entry.contentRect.width);
-        }
-    }, []);
-
-    useLayoutEffect(() => {
-        const resizeObserver = new ResizeObserver((entries) => onResize(entries));
-        resizeObserver.observe(ghostRef.current);
-        return () => resizeObserver.disconnect();
-    }, [onResize]);
-
-    const { containerRef, percentage } = useScrollPercentage();
+    });
 
     useEffect(() => {
-        scrollPerc.set(percentage?.vertical);
-    }, [percentage]);
+        const rect = containerRef?.current?.getBoundingClientRect();
+        setScrollStart(rect?.top);
+        setContainerWidth(rect?.width);
+    });
 
-    useEffect(() => {
-        const rect = wrapperRef?.current?.getBoundingClientRect();
-        setScrollStart(rect?.top) 
-    })
+    const dataLength = AboutData.length;
+    const scrollRangeEnd = scrollRange - (scrollRange / dataLength);
+    const transform = useTransform(scrollY, [scrollStart, scrollRange], [0, -scrollRangeEnd]);
 
-    const transform = useTransform(
-        scrollYProgress,
-        [0, 1],
-        [0, -scrollRange + viewportW]
-    );
-    const physics = { damping: 15, mass: 0.27, stiffness: 55 };
-    const spring = useSpring(transform, physics);
-
-    console.log("scrollPerc", scrollPerc, percentage);
+    console.log('scrollStart', scrollStart, scrollRange, scrollRangeEnd)
 
     return (
-        <div ref={wrapperRef}>
+        <section ref={containerRef}>
             <div className="scroll-container">
-                {/* {percentage} */}
-
                 <motion.section
                     ref={scrollRef}
                     style={{ x: transform }}
                     className="thumbnails-container"
                 >
                     <div className="thumbnails">
+                        {
+                            AboutData.map((item, index) => {
+                                return (
+                                    <Thumbnails
+                                        width={containerWidth}
+                                        index={index}
+                                        scrollAnimateStart={0}
+                                        scrollAnimateEnd={0}
+                                        data={item}
+                                    />
+                                )
+                            })
+                        }
+                        {/* <div className="thumbnail" />
                         <div className="thumbnail" />
                         <div className="thumbnail" />
                         <div className="thumbnail" />
                         <div className="thumbnail" />
-                        <div className="thumbnail" />
-                        <div className="thumbnail" />
+                        <div className="thumbnail" /> */}
                     </div>
                 </motion.section>
             </div>
-            <div ref={ghostRef} style={{ height: scrollRange }} className="ghost" />
-        </div>
+            <div style={{ height: scrollRange }} className="ghost" />
+        </section>
     );
 };
 

@@ -1,0 +1,50 @@
+[
+    {
+        "id": "animal",
+        "image1": "animal1",
+        "image2": "animal2",
+        "content": "I am a big animal lover and get very excited around animals. I mean only the petting ones. You won't find me excited around a lion."
+    },
+    {
+        "id": "draw",
+        "image1": "draw1",
+        "image2": "draw2",
+        "content": "I loveee to paint, draw and create beautiful stuffs from waste. If you'll ever visit me, you can find a pretty dooddle on my wall."
+    },
+    {
+        "id": "foodie",
+        "image1": "food1",
+        "image2": "food2",
+        "content": "Who doesn't love to eat? As long as I don't gain weight. FYI - I'm hungry after every 2 hours. Please don't judge."
+    },
+    {
+        "id": "netflix",
+        "image1": "netflix1",
+        "image2": "netflix2",
+        "content": "horror"
+    },
+    {
+        "id": "gym",
+        "image1": "gym1",
+        "image2": "gym2",
+        "content": "Gym? Everyday? No! Always motivated after every 3 months. Joins the Gym. Done with it in 2 weeks. Repeat."
+    },
+    {
+        "id": "shopping",
+        "image1": "shopping1",
+        "image2": "shopping2",
+        "content": "Buys atleast one piece of clothing every month and still has nothing to wear."
+    },
+    {
+        "id": "friends",
+        "image1": "friends1",
+        "image2": "friends2",
+        "content": "I like to meet new people and make new friends. A cup of coffee always works :)"
+    },
+    {
+        "id": "travel",
+        "image1": "travel1",
+        "image2": "travel2",
+        "content": "I want to travel the whole world and try many adventurous activities. But let's first start with exploring India."
+    }
+]

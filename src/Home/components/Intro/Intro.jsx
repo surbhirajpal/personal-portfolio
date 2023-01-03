@@ -1,5 +1,3 @@
-import introImage from '../../../images/intro.png';
-
 import './Intro.less';
 
 const Intro = () => {
@@ -15,7 +13,7 @@ const Intro = () => {
                     <p className='intro-brief'>{'Software Developer from Chandiagrh, India with solid experience in building UI applications with modern technologies'}</p>
                 </div>
                 <div className='intro-image'>
-                    <img src = {introImage}/>
+                    <img src = {'images/intro.png'}/>
                 </div>
             </div>
         </section>

@@ -1,0 +1,30 @@
+.thumbnail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: -webkit-fill-available;
+        margin: 40px;
+        padding: 40px;
+        border: 1px solid #fff;
+        border-radius: 20px;
+    }
+
+    &-image, &-content{
+        flex: 1 1 0px;
+    }
+
+    &-content{
+        font-size: 18px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    img{
+        width: 100%;
+    }
+}
