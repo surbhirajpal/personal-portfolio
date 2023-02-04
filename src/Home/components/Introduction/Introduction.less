@@ -1,0 +1,30 @@
+
+.introduction{
+    &__container{
+        width: 1040px;
+        margin: auto;
+        height: 600px;
+        position: relative;
+    }
+    
+    &__designer, &__coder{
+        height: 600px;
+        position: absolute;
+        top: 0;
+        width: 420px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    &__designer{
+        left: 100px;
+        background-image: url('/public/images/intro-designer.jpg');
+        background-position: -50%;
+    }
+    
+    &__coder{
+        right: 100px;
+        background-image: url('/public/images/intro-coder.png');
+        background-position: 180%;
+    }
+}
