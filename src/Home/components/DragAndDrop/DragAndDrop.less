@@ -1,0 +1,32 @@
+.drag-drop{
+    height: 80vh;
+    background: linear-gradient(180deg, #6b576b 0%, #bf9696 100%);
+
+    &__container{
+        height: 100%;
+        position: relative;
+    }
+
+    &__image{
+        background: url(/public/images/dragAndDrop/bee.png) no-repeat;
+        background-position: center;
+        background-size: contain;
+    
+        border-radius: 30px;
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: calc(50% - 150px / 2);
+        left: calc(50% - 150px / 2);
+    }
+
+    &__text{
+        position: absolute;
+        bottom: 20px;
+        font-size: 10px;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        
+    }
+} 
