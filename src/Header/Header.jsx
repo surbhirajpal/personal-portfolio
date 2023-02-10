@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import LordIcon from '../LordIcon';
 
 import './Header.less';
@@ -5,19 +7,24 @@ import './Header.less';
 const Header = () => {
     const data = [
         {
+            id: 'About',
+            icon: 'https://cdn.lordicon.com/zpxybbhl.json',
+            redirect: 'about',
+        },
+        {
             id: 'Works',
             icon: 'https://cdn.lordicon.com/zpxybbhl.json',
-            redirect: '',
+            redirect: 'work',
         },
         {
             id: 'Resume',
             icon: 'https://cdn.lordicon.com/nocovwne.json',
-            redirect: '',
+            redirect: 'resume',
         },
         {
             id: 'Shelf',
             icon: 'https://cdn.lordicon.com/qhgmphtg.json',
-            redirect: '',
+            redirect: 'shelf',
         }
     ]
     return (
@@ -45,7 +52,11 @@ const Header = () => {
                     {
                         data.map((item, index) => {
                             return (
-                                <div className='header-content-info' key={index}>
+                                <Link
+                                    to={`/${item.redirect}`}
+                                    className='header-content-info'
+                                    key={index}
+                                >
                                     <LordIcon
                                         src={item.icon}
                                         colors={{ primary: '#6b576b', secondary: '#6b576b' }}
@@ -53,7 +64,7 @@ const Header = () => {
                                         stroke={50}
                                     />
                                     <span>{item.id}</span>
-                                </div>
+                                </Link>
                             )
                         })
                     }

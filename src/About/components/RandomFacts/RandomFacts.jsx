@@ -13,10 +13,10 @@ import {
 
 import Thumbnails from './Thumbnail';
 
-import AboutData from './AboutData.json';
-import './About.less';
+import RandomFactsData from './RandomFactsData.json';
+import './RandomFacts.less';
 
-const About = () => {
+const RandomFacts = () => {
     const containerRef = useRef(null);
     const scrollRef = useRef(null);
 
@@ -36,11 +36,10 @@ const About = () => {
         setContainerWidth(rect?.width);
     });
 
-    const dataLength = AboutData.length;
+    const dataLength = RandomFactsData.length;
     const scrollRangeEnd = scrollRange - (scrollRange / dataLength);
     const transform = useTransform(scrollY, [scrollStart, scrollRange], [0, -scrollRangeEnd]);
 
-    console.log('scrollStart', scrollStart, scrollRange, scrollRangeEnd)
 
     return (
         <section ref={containerRef}>
@@ -52,11 +51,11 @@ const About = () => {
                 >
                     <div className="thumbnails">
                         {
-                            AboutData.map((item, index) => {
+                            RandomFactsData.map((item, index) => {
                                 return (
                                     <Thumbnails
                                         width={containerWidth}
-                                        index={index}
+                                        key={index}
                                         scrollAnimateStart={0}
                                         scrollAnimateEnd={0}
                                         data={item}
@@ -64,12 +63,6 @@ const About = () => {
                                 )
                             })
                         }
-                        {/* <div className="thumbnail" />
-                        <div className="thumbnail" />
-                        <div className="thumbnail" />
-                        <div className="thumbnail" />
-                        <div className="thumbnail" />
-                        <div className="thumbnail" /> */}
                     </div>
                 </motion.section>
             </div>
@@ -78,4 +71,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default RandomFacts;
