@@ -42,31 +42,34 @@ const RandomFacts = () => {
 
 
     return (
-        <section ref={containerRef}>
-            <div className="scroll-container">
-                <motion.section
-                    ref={scrollRef}
-                    style={{ x: transform }}
-                    className="thumbnails-container"
-                >
-                    <div className="thumbnails">
-                        {
-                            RandomFactsData.map((item, index) => {
-                                return (
-                                    <Thumbnails
-                                        width={containerWidth}
-                                        key={index}
-                                        scrollAnimateStart={0}
-                                        scrollAnimateEnd={0}
-                                        data={item}
-                                    />
-                                )
-                            })
-                        }
-                    </div>
-                </motion.section>
+        <section ref={containerRef} className='random-facts padding-stripe'>
+            <div className='random-facts__wrapper'>
+                <h1 className='random-facts__title'>{`Random Facts`}</h1>
+                <div className="random-facts__scroll-container">
+                    <motion.section
+                        ref={scrollRef}
+                        style={{ x: transform }}
+                        className="random-facts__thumbnails-container"
+                    >
+                        <div className="random-facts__thumbnails">
+                            {
+                                RandomFactsData.map((item, index) => {
+                                    return (
+                                        <Thumbnails
+                                            width={containerWidth}
+                                            key={index}
+                                            scrollAnimateStart={0}
+                                            scrollAnimateEnd={0}
+                                            data={item}
+                                        />
+                                    )
+                                })
+                            }
+                        </div>
+                    </motion.section>
+                </div>
             </div>
-            <div style={{ height: scrollRange }} className="ghost" />
+            <div style={{ height: scrollRange }} className="random-facts__ghost" />
         </section>
     );
 };

@@ -46,7 +46,7 @@ const Introduction = () => {
             style={{ height: '600px' }}
             onMouseMove={e => handleMouseMove(e)}
             ref={containerRef}
-            className='introduction__container'
+            className='introduction__container padding-stripe'
         >
             <motion.div className='introduction__designer'
                 animate={{

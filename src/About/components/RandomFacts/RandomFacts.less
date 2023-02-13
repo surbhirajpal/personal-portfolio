@@ -1,33 +1,41 @@
-.scroll-container {
+
+.random-facts{
+
+  &__wrapper{
     position: sticky;
     top:0;
     left: 0;
     right: 0;
+  }
+
+  &__title{
+    font-size: 44px;
+    margin-bottom: 32px;
+  }
+
+  &__scroll-container {
     will-change: transform;
     overflow: hidden;
-    background-color: #a16b7c24;
     border-radius: 20px;
-  
-    .ghost {
-      width: 100vw;
-    }
   }
-  
-  .thumbnails-container {
+
+  &__thumbnails-container {
     position: relative;
     width: max-content;
     display: flex;
     align-items: center;
-    height: 600px;
-  
-    .thumbnails {
-      position: relative;
-      display: flex;
-  
-      & > *:not(:last-child) {
-        margin-right: 45px;
-      }
+  }
+
+  &__thumbnails {
+    position: relative;
+    display: flex;
+
+    & > *:not(:last-child) {
+      margin-right: 45px;
     }
   }
-  
-  
+
+  &__ghost{
+    width: 100vw;
+  }
+}

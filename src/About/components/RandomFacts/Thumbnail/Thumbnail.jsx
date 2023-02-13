@@ -13,9 +13,6 @@ const Thumbnail = ({
                 <div className='thumbnail-image'>
                     <img src={`images/${data.image1}.svg`} />
                 </div>
-                {/* <div className='thumnail-image'>
-                <img src={`images/${data.image2}.svg`} />
-            </div> */}
                 <div className='thumbnail-content'>{data.content}</div>
             </div>
         </div>

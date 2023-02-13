@@ -32,7 +32,7 @@ const Service = () => {
 
     console.log('scrollStart', scrollStart)
     return (
-        <section className='service' ref={serviceRef}>
+        <section className='service padding-stripe' ref={serviceRef}>
             <div className='service__wrapper'>
                 <h1 className='service__title'>
                     {'What I Can Do'}

@@ -15,36 +15,24 @@
         "id": "foodie",
         "image1": "food1",
         "image2": "food2",
-        "content": "Who doesn't love to eat? As long as I don't gain weight. FYI - I'm hungry after every 2 hours. Please don't judge."
+        "content": "My taste buds are always on a wild adventure, and I love nothing more than food. Let's eat, drink, and be merry!"
     },
     {
         "id": "netflix",
         "image1": "netflix1",
         "image2": "netflix2",
-        "content": "horror"
-    },
-    {
-        "id": "gym",
-        "image1": "gym1",
-        "image2": "gym2",
-        "content": "Gym? Everyday? No! Always motivated after every 3 months. Joins the Gym. Done with it in 2 weeks. Repeat."
-    },
-    {
-        "id": "shopping",
-        "image1": "shopping1",
-        "image2": "shopping2",
-        "content": "Buys atleast one piece of clothing every month and still has nothing to wear."
+        "content": "I'm a Netflix fanatic with a passion for binge-watching my favorite shows and movies. Wait, let me hit that 'play next episode' button!"
     },
     {
         "id": "friends",
         "image1": "friends1",
         "image2": "friends2",
-        "content": "I like to meet new people and make new friends. A cup of coffee always works :)"
+        "content": "I love making new friends and having a good time. I'm always on the lookout for new faces to chat with and new stories to hear."
     },
     {
         "id": "travel",
         "image1": "travel1",
         "image2": "travel2",
-        "content": "I want to travel the whole world and try many adventurous activities. But let's first start with exploring India."
+        "content": "I want to travel the whole world and try many adventurous activities. But first, I want to explore India."
     }
 ]

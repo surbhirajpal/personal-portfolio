@@ -1,0 +1,103 @@
+@workExpHeight: 500px;
+
+.work-exp{
+    background-color: #6b576b;
+    color: #fff;
+
+    &__title{
+        font-size: 44px;
+        margin-bottom: 32px;
+    }
+
+    &__path{
+        width: 3px;
+        height: @workExpHeight;
+        background-color: #fff;
+        margin: auto;
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    &__holder{
+        height: calc(@workExpHeight/2.1);
+        position: relative;
+
+        &[data-index = "2"]{
+            .work-exp__detail{
+                left: 40px;
+                right: auto;
+            }
+            .work-exp__duration{
+                right: 30px;
+                left: auto;
+            }
+        }
+    }
+
+    &__tech-logo, &__duration, &__detail{
+        position: absolute;
+    }
+
+    &__tech-logo{
+        width: 48px;
+        height: 48px;
+        background-color: #fff;
+        border-radius: 50%;
+        left: -20px;
+
+        &.graduation{
+            bottom: -45px;
+        }
+    }
+
+    &__duration{
+        white-space: nowrap;
+        left: 35px;
+        top: 15px;
+    }
+
+    &__detail{
+        right: 40px;
+        width: 25em;
+
+        background-color: #fff;
+        color: black;
+        padding: 15px 10px;
+        font-size: 12px;
+    }
+
+    &__main-tech{
+        color: #fff;
+        background-color: #6b576b;
+        display: inline;
+        padding: 3px 5px;
+        border-radius: 50px;
+    }
+
+    &__designation{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    &__company{
+        margin-top: 2px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    &__skills{
+        margin-top: 10px;
+        span{
+            display: inline-block;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            padding: 3px 5px;
+            border-radius: 50px;
+            background-color: #ddcbdd;
+        }
+    }
+
+}

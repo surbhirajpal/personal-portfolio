@@ -29,7 +29,7 @@ const Header = () => {
     ]
     return (
         <header className='header'>
-            <div className='header-logo'>
+            <Link to={'/'} className='header-logo'>
                 <LordIcon
                     src="https://cdn.lordicon.com/dqxvvqzi.json"
                     trigger="morph"
@@ -37,9 +37,9 @@ const Header = () => {
                     size={48}
                     stroke={20}
                 />
-            </div>
+            </Link>
             <div className='header-content'>
-                <div className='header-content__left'>
+                <Link className='header-content__left'>
                     <LordIcon
                         src="https://cdn.lordicon.com/rhvddzym.json"
                         colors={{ primary: '#6b576b' }}
@@ -47,7 +47,7 @@ const Header = () => {
                         stroke={50}
                     />
                     {'surbhirajpal88@gmail.com'}
-                </div>
+                </Link>
                 <div className='header-content__right'>
                     {
                         data.map((item, index) => {
