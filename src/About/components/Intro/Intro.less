@@ -1,27 +1,19 @@
-@purple-dark : #82697e;
-@purple-light : #a16b7c;
+@import '../../../styles/global.less';
 
-.intro{
+.about-intro{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: @dark-pink;
+    height: 100vh;
+    color: #fff;
 
-    &-title{
-        color: @purple-dark;
-        font-size: 48px;
-        margin-bottom: 16px;
-
-        p{
-            &:last-of-type{
-                margin-left: 20%;
-            }
-        }
+    &__brief{
+        text-transform: uppercase;
+        font-size: 50px;
+        font-family: "Mikado-Bold",sans-serif; 
+        width: 85%;
+        margin: auto;
     }
 
-    &-image{
-        text-align: center;
-        img{
-            width: 65%;
-        }
-    }
 }

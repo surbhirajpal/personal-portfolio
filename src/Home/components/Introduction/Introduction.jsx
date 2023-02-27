@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 
 import './Introduction.less';
 
-const Introduction = () => {
+const Introduction = ({
+    sectionHeight,
+}) => {
     const [mouseDirection, setMouseDirection] = useState('center');
 
     const variationConstant = 100;
@@ -42,29 +44,31 @@ const Introduction = () => {
     })
 
     return (
-        <motion.div
-            style={{ height: '600px' }}
-            onMouseMove={e => handleMouseMove(e)}
-            ref={containerRef}
-            className='introduction__container padding-stripe'
-        >
-            <motion.div className='introduction__designer'
-                animate={{
-                    width: ((containerWidth / 2) - variationConstant) - widthVariant,
-                    left: `${variationConstant - (-widthVariant)}px`,
-                }}
+        <section className='introduction' style={{height : sectionHeight}}>
+            <motion.div
+                style={{ height: '600px' }}
+                onMouseMove={e => handleMouseMove(e)}
+                ref={containerRef}
+                className='introduction__container'
             >
-            </motion.div>
+                <motion.div className='introduction__designer'
+                    animate={{
+                        width: ((containerWidth / 2) - variationConstant) - widthVariant,
+                        left: `${variationConstant - (-widthVariant)}px`,
+                    }}
+                >
+                </motion.div>
 
-            <motion.div className='introduction__coder'
-                animate={{
-                    width: ((containerWidth / 2) - variationConstant) - (-widthVariant),
-                    right: `${variationConstant - widthVariant}px`,
-                }}
-            >
-            </motion.div>
+                <motion.div className='introduction__coder'
+                    animate={{
+                        width: ((containerWidth / 2) - variationConstant) - (-widthVariant),
+                        right: `${variationConstant - widthVariant}px`,
+                    }}
+                >
+                </motion.div>
 
-        </motion.div>
+            </motion.div>
+        </section>
     );
 };
 

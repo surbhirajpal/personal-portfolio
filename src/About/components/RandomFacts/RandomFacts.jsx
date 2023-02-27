@@ -42,9 +42,8 @@ const RandomFacts = () => {
 
 
     return (
-        <section ref={containerRef} className='random-facts padding-stripe'>
+        <section ref={containerRef} className='random-facts'>
             <div className='random-facts__wrapper'>
-                <h1 className='random-facts__title'>{`Random Facts`}</h1>
                 <div className="random-facts__scroll-container">
                     <motion.section
                         ref={scrollRef}
@@ -69,7 +68,7 @@ const RandomFacts = () => {
                     </motion.section>
                 </div>
             </div>
-            <div style={{ height: scrollRange }} className="random-facts__ghost" />
+            <div style={{ height: scrollRangeEnd }} className="random-facts__ghost" />
         </section>
     );
 };

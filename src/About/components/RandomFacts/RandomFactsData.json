@@ -3,36 +3,54 @@
         "id": "animal",
         "image1": "animal1",
         "image2": "animal2",
-        "content": "I am a big animal lover and get very excited around animals. I mean only the petting ones. You won't find me excited around a lion."
+        "content": "I love dogs more than humans... is that wrong?",
+        "backgroundColor": "#2F3C7E",
+        "textColor": "#FBEAEB",
+        "image":"animal.png"
     },
     {
-        "id": "draw",
+        "id": "artist",
         "image1": "draw1",
         "image2": "draw2",
-        "content": "I loveee to paint, draw and create beautiful stuffs from waste. If you'll ever visit me, you can find a pretty dooddle on my wall."
+        "content": "I'm not messy, I'm just artistically expressive... with a paintbrush in hand!",
+        "backgroundColor": "#FCE77D",
+        "textColor": "#F96167",
+        "image":"artist.png"
     },
     {
         "id": "foodie",
         "image1": "food1",
         "image2": "food2",
-        "content": "My taste buds are always on a wild adventure, and I love nothing more than food. Let's eat, drink, and be merry!"
+        "content": "I'm not a chef, but I eat like one.",
+        "backgroundColor": "#990011FF",
+        "textColor": "#FCF6F5FF",
+        "image":"foodie.png"
     },
     {
-        "id": "netflix",
+        "id": "mentor",
         "image1": "netflix1",
         "image2": "netflix2",
-        "content": "I'm a Netflix fanatic with a passion for binge-watching my favorite shows and movies. Wait, let me hit that 'play next episode' button!"
+        "content": "Dwight Schrute is my mentor.",
+        "backgroundColor": "#4831D4",
+        "textColor": "#CCF381",
+        "image":"dwight.png"
     },
     {
-        "id": "friends",
+        "id": "mermaid",
         "image1": "friends1",
         "image2": "friends2",
-        "content": "I love making new friends and having a good time. I'm always on the lookout for new faces to chat with and new stories to hear."
+        "content": "I want to be a mermaid.",
+        "backgroundColor": "#00203FFF",
+        "textColor": "#ADEFD1FF",
+        "image":"mermaid.png"
     },
     {
         "id": "travel",
         "image1": "travel1",
         "image2": "travel2",
-        "content": "I want to travel the whole world and try many adventurous activities. But first, I want to explore India."
+        "content": "I have a wanderlust that's stronger than my budget.",
+        "backgroundColor": "#E2D1F9",
+        "textColor": "#317773",
+        "image":"travel.png"
     }
 ]

@@ -30,57 +30,54 @@ const Service = () => {
         setScrollStart(rect?.top);
     }, [serviceRef]);
 
-    console.log('scrollStart', scrollStart)
     return (
         <section className='service padding-stripe' ref={serviceRef}>
-            <div className='service__wrapper'>
-                <h1 className='service__title'>
-                    {'What I Can Do'}
-                </h1>
-                <div className='service__content-wrapper'>
-                    <div className='service__content-holder'>
-                        <motion.div
-                            style={{
-                                opacity: contentOpacity
-                            }}
-                        >
-                            <div className='service__subtitle'>
+            <div className='service__wrapper container'>
+                <div>
+                    <h1 className='service__title'>
+                        {'FRONTEND DEVELOPER'}
+                    </h1>
+                    <div className='service__content-wrapper'>
+                        <div className='service__content-holder'>
+                            <motion.div
+                                style={{
+                                    opacity: contentOpacity
+                                }}
+                            >
+                                {/* <div className='service__subtitle'>
                                 <p>{'FRONTEND DEVELOPER'}</p>
-                            </div>
-                            <div className='service__content'>
-                                <p>
-                                    {`As a front-end developer, I specialize in creating and implementing the visual and interactive elements of websites and web applications. 
+                            </div> */}
+                                <div className='service__content'>
+                                    <p>
+                                        {`As a front-end developer, I specialize in creating and implementing the visual and interactive elements of websites and web applications. 
                             My expertise lies in React.js and responsive design, and I have a strong understanding of the latest web development trends 
                             and technologies.`}
-                                </p>
-                                <p>
-                                    {`Whether you need a new website, a redesign, or just a touch of magic, I am ready to bring my skills and creativity to your project. 
-                            Let's work together to create something amazing!`}
-                                </p>
-                            </div>
-                        </motion.div>
-                    </div>
-                    <div className='service__image-holder'>
-                        <div className='service__coder'>
-                            <motion.div
-                                style={{
-                                    scale: coderScale,
-                                    y: '-50%',
-                                }}
-                            >
-                                <img src={'images/service/code.svg'} />
+                                    </p>
+                                </div>
                             </motion.div>
                         </div>
-                        <div className='service__coding'>
-                            <motion.div
-                                style={{
-                                    scale: 0.8,
-                                    y: codingPosition,
-                                    opacity: contentOpacity,
-                                }}
-                            >
-                                <img src={'images/service/coding.png'} />
-                            </motion.div>
+                        <div className='service__image-holder'>
+                            <div className='service__coder'>
+                                <motion.div
+                                    style={{
+                                        scale: coderScale,
+                                        y: '-50%',
+                                    }}
+                                >
+                                    <img src={'images/service/code.svg'} />
+                                </motion.div>
+                            </div>
+                            <div className='service__coding'>
+                                <motion.div
+                                    style={{
+                                        scale: 0.8,
+                                        y: codingPosition,
+                                        opacity: contentOpacity,
+                                    }}
+                                >
+                                    <img src={'images/service/coding.png'} />
+                                </motion.div>
+                            </div>
                         </div>
                     </div>
                 </div>

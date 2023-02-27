@@ -11,42 +11,45 @@ const Header = () => {
             icon: 'https://cdn.lordicon.com/zpxybbhl.json',
             redirect: 'about',
         },
-        {
-            id: 'Works',
-            icon: 'https://cdn.lordicon.com/zpxybbhl.json',
-            redirect: 'work',
-        },
+        // {
+        //     id: 'Works',
+        //     icon: 'https://cdn.lordicon.com/zpxybbhl.json',
+        //     redirect: 'work',
+        // },
         {
             id: 'Resume',
             icon: 'https://cdn.lordicon.com/nocovwne.json',
             redirect: 'resume',
         },
-        {
-            id: 'Shelf',
-            icon: 'https://cdn.lordicon.com/qhgmphtg.json',
-            redirect: 'shelf',
-        }
+        // {
+        //     id: 'Shelf',
+        //     icon: 'https://cdn.lordicon.com/qhgmphtg.json',
+        //     redirect: 'shelf',
+        // }
     ]
+
+    const pathname = window.location.pathname.replace('/','');
+
     return (
-        <header className='header'>
+        <header className='header container' data-page={pathname}>
             <Link to={'/'} className='header-logo'>
                 <LordIcon
                     src="https://cdn.lordicon.com/dqxvvqzi.json"
                     trigger="morph"
-                    colors={{ primary: '#6b576b', secondary: '#6b576b' }}
+                    colors={{ primary: '#fff', secondary: '#fff' }}
                     size={48}
                     stroke={20}
                 />
             </Link>
             <div className='header-content'>
                 <Link className='header-content__left'>
-                    <LordIcon
+                    {/* <LordIcon
                         src="https://cdn.lordicon.com/rhvddzym.json"
                         colors={{ primary: '#6b576b' }}
                         size={48}
                         stroke={50}
-                    />
-                    {'surbhirajpal88@gmail.com'}
+                    /> */}
+                    {'contact'}
                 </Link>
                 <div className='header-content__right'>
                     {
@@ -57,12 +60,12 @@ const Header = () => {
                                     className='header-content-info'
                                     key={index}
                                 >
-                                    <LordIcon
+                                    {/* <LordIcon
                                         src={item.icon}
-                                        colors={{ primary: '#6b576b', secondary: '#6b576b' }}
+                                        colors={{ primary: '#fff', secondary: '#fff' }}
                                         size={35}
                                         stroke={50}
-                                    />
+                                    /> */}
                                     <span>{item.id}</span>
                                 </Link>
                             )

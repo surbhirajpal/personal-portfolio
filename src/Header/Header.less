@@ -1,8 +1,17 @@
+@import '../styles/global.less';
 
 .header{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    height: 100px;
+    font-family: "Mikado-Medium",sans-serif; 
+    // box-shadow: 0 0 8px 0 rgb(0 0 0 / 33%);
+
+    &[data-page='about']{
+        background-color: @yellow;
+    }
+
 
     &-logo{
         width: 10%;
@@ -22,7 +31,14 @@
 
     &-content-info{
         &:not(:last-of-type){
-            margin-right: 24px;
+            margin-right: 5rem;
         }
+    }
+
+    a{
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 18px;
     }
 }
