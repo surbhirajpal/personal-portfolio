@@ -4,8 +4,8 @@
         "image1": "animal1",
         "image2": "animal2",
         "content": "I love dogs more than humans... is that wrong?",
-        "backgroundColor": "#2F3C7E",
-        "textColor": "#FBEAEB",
+        "backgroundColor": "#ffd3e9",
+        "textColor": "#ff0871",
         "image":"animal.png"
     },
     {
@@ -13,8 +13,8 @@
         "image1": "draw1",
         "image2": "draw2",
         "content": "I'm not messy, I'm just artistically expressive... with a paintbrush in hand!",
-        "backgroundColor": "#FCE77D",
-        "textColor": "#F96167",
+        "backgroundColor": "#83b7f5",
+        "textColor": "#fff",
         "image":"artist.png"
     },
     {
@@ -22,8 +22,8 @@
         "image1": "food1",
         "image2": "food2",
         "content": "I'm not a chef, but I eat like one.",
-        "backgroundColor": "#990011FF",
-        "textColor": "#FCF6F5FF",
+        "backgroundColor": "#ffd3e9",
+        "textColor": "#ff0871",
         "image":"foodie.png"
     },
     {
@@ -31,8 +31,8 @@
         "image1": "netflix1",
         "image2": "netflix2",
         "content": "Dwight Schrute is my mentor.",
-        "backgroundColor": "#4831D4",
-        "textColor": "#CCF381",
+        "backgroundColor": "#83b7f5",
+        "textColor": "#fff",
         "image":"dwight.png"
     },
     {
@@ -40,8 +40,8 @@
         "image1": "friends1",
         "image2": "friends2",
         "content": "I want to be a mermaid.",
-        "backgroundColor": "#00203FFF",
-        "textColor": "#ADEFD1FF",
+        "backgroundColor": "#ffd3e9",
+        "textColor": "#ff0871",
         "image":"mermaid.png"
     },
     {
@@ -49,8 +49,8 @@
         "image1": "travel1",
         "image2": "travel2",
         "content": "I have a wanderlust that's stronger than my budget.",
-        "backgroundColor": "#E2D1F9",
-        "textColor": "#317773",
+        "backgroundColor": "#83b7f5",
+        "textColor": "#fff",
         "image":"travel.png"
     }
 ]

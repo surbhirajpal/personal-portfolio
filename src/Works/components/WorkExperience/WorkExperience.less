@@ -1,8 +1,15 @@
-@workExpHeight: 500px;
+@import '../../../styles/global.less';
 
 .work-exp{
     background-color: #6b576b;
     color: #fff;
+    font-family: "Mikado-Regular",sans-serif;
+    height: 200vh;
+
+    .container{
+        position: sticky;
+        top: 80px;
+    }
 
     &__title{
         font-size: 44px;
@@ -11,7 +18,6 @@
 
     &__path{
         width: 3px;
-        height: @workExpHeight;
         background-color: #fff;
         margin: auto;
         position: relative;
@@ -22,13 +28,19 @@
     }
 
     &__holder{
-        height: calc(@workExpHeight/2.1);
         position: relative;
+
+        &[data-index = '1']{
+            .work-exp__detail{
+                bottom: -25%;
+            }
+        }
 
         &[data-index = "2"]{
             .work-exp__detail{
                 left: 40px;
                 right: auto;
+                bottom: -35%;
             }
             .work-exp__duration{
                 right: 30px;
@@ -39,6 +51,7 @@
 
     &__tech-logo, &__duration, &__detail{
         position: absolute;
+        bottom: 0;
     }
 
     &__tech-logo{
@@ -49,52 +62,68 @@
         left: -20px;
 
         &.graduation{
-            bottom: -45px;
+           top: 0;
         }
     }
 
     &__duration{
         white-space: nowrap;
         left: 35px;
-        top: 15px;
+        bottom: 4%;
+        font-size: 18px;
     }
 
     &__detail{
         right: 40px;
-        width: 25em;
+        width: 30em;
 
         background-color: #fff;
         color: black;
         padding: 15px 10px;
         font-size: 12px;
+        border-radius: 10px;
+        transition: transform .5s ease;
+
+        a{
+            color: #000;
+            text-decoration: none;
+        }
+
+        &:hover{
+            transform: scale(1.05);
+        }
     }
 
     &__main-tech{
         color: #fff;
         background-color: #6b576b;
         display: inline;
-        padding: 3px 5px;
+        padding: 3px 10px;
         border-radius: 50px;
+        font-size: 18px;
     }
 
     &__designation{
         margin-top: 10px;
-        font-size: 16px;
+        font-size: 24px;
     }
 
     &__company{
         margin-top: 2px;
-        font-size: 14px;
         font-weight: bold;
+        font-size: 24px;
+        font-family: "Mikado-Bold",sans-serif; 
     }
 
     &__skills{
         margin-top: 10px;
+        font-size: 18px;
+
         span{
             display: inline-block;
-            margin-right: 5px;
-            margin-bottom: 5px;
-            padding: 3px 5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 3px 10px;
             border-radius: 50px;
             background-color: #ddcbdd;
         }

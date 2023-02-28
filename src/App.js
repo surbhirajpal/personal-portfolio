@@ -5,6 +5,8 @@ import Header from './Header';
 
 import Home from './Home';
 import About from './About';
+import Works from './Works';
+
 import './App.less';
 
 const App = () => {
@@ -16,6 +18,7 @@ const App = () => {
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/about" element={<About />} />
+            <Route exact path="/work" element={<Works />} />
           </Routes>
         </BrowserRouter>
       </div>
