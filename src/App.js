@@ -2,6 +2,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Header from './Header';
+import Footer from './Footer';
 
 import Home from './Home';
 import About from './About';
@@ -20,6 +21,7 @@ const App = () => {
             <Route exact path="/about" element={<About />} />
             <Route exact path="/work" element={<Works />} />
           </Routes>
+          <Footer />
         </BrowserRouter>
       </div>
     </main>

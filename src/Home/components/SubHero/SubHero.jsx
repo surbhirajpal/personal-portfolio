@@ -29,29 +29,31 @@ const SubHero = ({
 
     return (
         <section
-            className='sub-hero padding-stripe'
+            className='sub-hero'
             ref={subHeroRef}
         // style={{ height: sectionHeight }}
         >
-            <div className='container'>
-                <div className='sub-hero__wrapper'>
-                    <p>
-                        <motion.span
-                            style={{
-                                opacity: contentOpacity
-                            }}
-                        >
-                            {`Whether you need a new website, a redesign, or just a touch of magic, I am ready to bring my skills and creativity to your project. `}
-                        </motion.span>
-                        <span>{`Let's work together `}</span>
-                        <motion.span
-                            style={{
-                                opacity: contentOpacity
-                            }}
-                        >
-                            {`to create something amazing!`}
-                        </motion.span>
-                    </p>
+            <div className='sub-hero__holder'>
+                <div className='container'>
+                    <div className='sub-hero__wrapper'>
+                        <p>
+                            <motion.span
+                                style={{
+                                    opacity: contentOpacity
+                                }}
+                            >
+                                {`Whether you need a new website, a redesign, or just a touch of magic, I am ready to bring my skills and creativity to your project. `}
+                            </motion.span>
+                            <span>{`Let's work together `}</span>
+                            <motion.span
+                                style={{
+                                    opacity: contentOpacity
+                                }}
+                            >
+                                {`to create something amazing!`}
+                            </motion.span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>

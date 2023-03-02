@@ -3,8 +3,10 @@
 .service{
     height: 150vh;
     position: relative;
-    background-color: @light-blue;
-    color: #fff;
+
+    box-shadow: inset 0px 1px 4px 0px rgb(0 0 0 / 10%);
+    background: #fafafa;
+    border-bottom: #dddddd solid 1px;
 
     &__wrapper{
         position: sticky;
@@ -65,20 +67,15 @@
 
     &__title{
         font-size: 44px;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
         font-family: "Mikado-Bold",sans-serif; 
-    }
-
-    &__subtitle{
-        text-align: center;
-        margin-bottom: 30px;
-        font-weight: bold;
+        // color: @dark-purple;
     }
 
     &__content{
-        font-family: "MarkOT-Heavy",sans-serif; 
-        font-size: 25px;
-        text-align: justify;
+        // font-family: "MarkOT-Heavy",sans-serif; 
+        font-size: 18px;
+        // text-align: justify;
 
         p{
             margin-bottom: 15px;

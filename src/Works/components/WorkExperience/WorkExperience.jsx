@@ -27,7 +27,7 @@ const WorkExperience = () => {
             MainTech: 'React.js',
             designation: 'Software Developer',
             company: `Osmo (Byju's)`,
-            technologies: ['React.js', 'Javascript', 'Typescript', 'Framer motion', 'LESS/ SASS', 'Responsive Web design', 'Git', 'Storybook', 'HTML/CSS', 'REST API'],
+            technologies: ['React.js', 'Javascript', 'Typescript', 'Framer motion', 'LESS', 'Responsive Web design', 'Git', 'Storybook', 'HTML/CSS', 'REST API'],
             url: 'https://www.playosmo.com/en/'
         },
     ];
@@ -38,10 +38,14 @@ const WorkExperience = () => {
     const opacity1 = useTransform(scrollY, [0, 500], [0, 1]);
     const opacity2 = useTransform(scrollY, [500, 1000], [0, 1]);
 
+    const pathHeight = screenHeight / 1.5;
+    const workExpHeight = pathHeight / 2;
+
     return (
         <section className='work-exp padding-stripe'>
             <div className='container'>
-                <div className='work-exp__path' style={{ height: screenHeight / 1.5 }}>
+                <h1 className='work-exp__title'>{'WORK EXPERIENCE'}</h1>
+                <div className='work-exp__path' style={{ height: pathHeight }}>
                     <div className='work-exp__tech-logo graduation'>
                         <LordIcon
                             src={'https://cdn.lordicon.com/puvaffet.json'}
@@ -56,7 +60,7 @@ const WorkExperience = () => {
                             const contentOpacity = index === 0 ? opacity1 : opacity2;
 
                             return (
-                                <div key={index} className='work-exp__holder' data-index={index + 1} style={{ height: screenHeight / 2 }}>
+                                <div key={index} className='work-exp__holder' data-index={index + 1} style={{ height: workExpHeight }}>
                                     <div className='work-exp__tech-logo'>
                                         <LordIcon
                                             src={data.techIcon}

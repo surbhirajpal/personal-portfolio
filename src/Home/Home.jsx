@@ -1,7 +1,6 @@
 import Introduction from './components/Introduction';
 import Service from './components/Service';
 import SubHero from './components/SubHero';
-import DragAndDrop from './components/DragAndDrop';
 
 const Home = () => {
     const screenHeight = window.innerHeight;
@@ -12,7 +11,6 @@ const Home = () => {
             <Introduction sectionHeight={sectionHeight} />
             <Service />
             <SubHero sectionHeight={sectionHeight}/>
-            <DragAndDrop />
         </>
     );
 };
