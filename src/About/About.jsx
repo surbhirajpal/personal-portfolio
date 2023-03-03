@@ -1,15 +1,15 @@
 import Hero from './components/Hero';
-import Intro from './components/Intro';
+import AboutSubHero from './components/AboutSubHero';
 import RandomFacts from './components/RandomFacts';
 
 import './About.less';
 
 const About = () => {
-    
+
     return (
         <>
             <Hero />
-            <Intro />
+            <AboutSubHero />
             <RandomFacts />
         </>
     );

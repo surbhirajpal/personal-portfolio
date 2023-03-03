@@ -1,25 +1,34 @@
 @import '../../../styles/global.less';
 
 .about-hero{
-    background-color: @yellow;
+    // background-color: @yellow;
     position: relative;
-    display: flex;
+    // display: flex;
     overflow: hidden;
+    margin-top: 100px;
+
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
 
     &__content{
-        width: 70%;
-        color: @hot-pink;
+        // width: 70%;
+        // color: @hot-pink;
         text-transform: uppercase;
-        font-size: 115px;
-        line-height: 115px;
+        font-size: 80px;
         font-family: "Mikado-Bold",sans-serif; 
+
+        p{
+            line-height: 80px;
+        }
     }
 
     &__image{
-        position: absolute;
-        bottom: -3%;
-        right: 7%;
-        width: 40%;
+        // position: absolute;
+        // bottom: -3%;
+        // right: 7%;
+        // width: 40%;
 
         img{
             width: 100%;
