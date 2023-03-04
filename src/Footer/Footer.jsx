@@ -7,17 +7,17 @@ const Footer = () => {
     const socialMedia = [
         {
             id: 'linkedin',
-            link: '',
+            link: 'https://www.linkedin.com/in/surbhi-rajpal-a91711184/',
             icon: faLinkedin
         },
         {
             id: 'github',
-            link: '',
+            link: 'https://github.com/surbhirajpal',
             icon: faGithub
         },
         {
             id: 'instagram',
-            link: '',
+            link: 'https://www.instagram.com/surbhi_rajpal_/',
             icon: faInstagram
         },
 
@@ -29,7 +29,7 @@ const Footer = () => {
                 {
                     socialMedia.map((item, index) => {
                         return (
-                            <a className='footer__link' key={index} href={item.link} >
+                            <a className='footer__link' key={index} href={item.link} target='blank'>
                                 <FontAwesomeIcon icon={item.icon} />
                             </a>
                         )

@@ -1,3 +1,9 @@
+import {
+    motion,
+    useScroll,
+    useTransform,
+} from "framer-motion";
+
 import './Thumbnail.less';
 
 const Thumbnail = ({
@@ -7,6 +13,9 @@ const Thumbnail = ({
     scrollAnimateEnd,
     data,
 }) => {
+    const { scrollY } = useScroll();
+    const transform = useTransform(scrollY, [scrollAnimateStart, scrollAnimateEnd], [0, 200]);
+
     return (
         <div
             className='thumbnail'
@@ -21,10 +30,15 @@ const Thumbnail = ({
             <div className='thumbnail-wrapper padding-stripe'>
                 <div className='container'>
                     <div className='thumbnail-content'>{data.content}</div>
-                    <div className='thumbnail-image' data-type={data.id}>
-                        {/* <img src={`images/${data.image1}.svg`} /> */}
+                    <motion.div
+                        className='thumbnail-image'
+                        data-type={data.id}
+                        style={{
+                            x: transform
+                        }}
+                    >
                         <img src={`images/about/${data.image}`} />
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>

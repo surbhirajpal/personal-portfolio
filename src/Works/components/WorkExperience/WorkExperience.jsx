@@ -50,7 +50,7 @@ const WorkExperience = () => {
                         <LordIcon
                             src={'https://cdn.lordicon.com/puvaffet.json'}
                             trigger="morph"
-                            colors={{ primary: '#6b576b', secondary: '#6b576b' }}
+                            colors={{ primary: '#fff', secondary: '#fff' }}
                             size={48}
                             stroke={50}
                         />
@@ -65,7 +65,7 @@ const WorkExperience = () => {
                                         <LordIcon
                                             src={data.techIcon}
                                             trigger="morph"
-                                            colors={{ primary: '#6b576b', secondary: '#6b576b' }}
+                                            colors={{ primary: '#fff', secondary: '#fff' }}
                                             size={48}
                                             stroke={50}
                                         />

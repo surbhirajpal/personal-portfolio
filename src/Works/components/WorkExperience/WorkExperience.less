@@ -1,14 +1,13 @@
 @import '../../../styles/global.less';
 
 .work-exp{
-    background-color: #6b576b;
-    color: #fff;
     font-family: "Mikado-Regular",sans-serif;
     height: 200vh;
+    margin-top: 100px;
 
     .container{
         position: sticky;
-        top: 80px;
+        top: 120px;
     }
 
     &__title{
@@ -20,7 +19,7 @@
 
     &__path{
         width: 3px;
-        background-color: #fff;
+        background-color: @text-color;
         margin: auto;
         position: relative;
         padding-bottom: 7%;
@@ -34,16 +33,12 @@
         position: relative;
 
         &[data-index = '1']{
-            // .work-exp__detail{
-            //     bottom: -25%;
-            // }
         }
 
         &[data-index = "2"]{
             .work-exp__detail{
                 left: 40px;
                 right: auto;
-                // bottom: -35%;
             }
             .work-exp__duration{
                 right: 30px;
@@ -60,7 +55,7 @@
     &__tech-logo{
         width: 48px;
         height: 48px;
-        background-color: #fff;
+        background-color: @text-color;
         border-radius: 50%;
         left: -20px;
 
@@ -80,8 +75,7 @@
         right: 40px;
         width: 30em;
 
-        background-color: #fff;
-        color: black;
+        border: 1px solid @text-color;
         padding: 15px 10px;
         font-size: 12px;
         border-radius: 10px;
@@ -100,7 +94,7 @@
 
     &__main-tech{
         color: #fff;
-        background-color: #6b576b;
+        background-color: @text-color;
         display: inline;
         padding: 3px 10px;
         border-radius: 50px;
@@ -129,7 +123,8 @@
             margin-bottom: 10px;
             padding: 3px 10px;
             border-radius: 50px;
-            background-color: #ddcbdd;
+            background-color: @dark-grey;
+            color: #fff;
         }
     }
 

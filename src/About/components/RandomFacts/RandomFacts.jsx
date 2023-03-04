@@ -26,6 +26,8 @@ const RandomFacts = () => {
     const [scrollStart, setScrollStart] = useState(0);
     const [containerWidth, setContainerWidth] = useState(0);
 
+    const windowWidth = window.innerWidth;
+
     useLayoutEffect(() => {
         scrollRef && setScrollRange(scrollRef.current.scrollWidth);
     });
@@ -53,12 +55,13 @@ const RandomFacts = () => {
                         <div className="random-facts__thumbnails">
                             {
                                 RandomFactsData.map((item, index) => {
+                                    const halfWidth = containerWidth / 2;
                                     return (
                                         <Thumbnails
                                             width={containerWidth}
-                                            key={index}
-                                            scrollAnimateStart={0}
-                                            scrollAnimateEnd={0}
+                                            index={index}
+                                            scrollAnimateStart={scrollStart + ((index + 1) * halfWidth) + (index * halfWidth)}
+                                            scrollAnimateEnd={scrollStart + ((index + 1) * containerWidth) + 200}
                                             data={item}
                                         />
                                     )
