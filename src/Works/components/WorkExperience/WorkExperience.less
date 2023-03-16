@@ -15,6 +15,11 @@
         margin-bottom: 100px;
         font-family: "Mikado-Bold", sans-serif;
         text-align: center;
+
+        #screen.xs({
+            font-size: 26px;
+            margin-bottom: 30px;
+        })
     }
 
     &__path{
@@ -27,13 +32,14 @@
         display: flex;
         flex-direction: column;
         justify-content: end;
+
+        #screen.xs({
+            margin: unset;
+        });
     }
 
     &__holder{
         position: relative;
-
-        &[data-index = '1']{
-        }
 
         &[data-index = "2"]{
             .work-exp__detail{
@@ -43,6 +49,11 @@
             .work-exp__duration{
                 right: 30px;
                 left: auto;
+
+                #screen.xs({
+                    right: auto;
+                    left: 35px;
+                })
             }
         }
     }
@@ -82,6 +93,17 @@
         transition: transform .5s ease;
         bottom: -10%;
 
+        #screen.sm({
+            width: 20em;
+        });
+
+        #screen.xs({
+            left: 40px;
+            right: auto;
+            bottom: 15%;
+            width: 20em;
+        });
+
         a{
             color: #000;
             text-decoration: none;
@@ -99,11 +121,30 @@
         padding: 3px 10px;
         border-radius: 50px;
         font-size: 18px;
+
+        #screen.sm({
+            font-size: 15px;
+        });
+
+        #screen.xs({
+            font-size: 13px;
+            padding: 3px 5px;
+        });
     }
 
     &__designation{
         margin-top: 10px;
         font-size: 24px;
+
+        #screen.sm({
+            font-size: 18px;
+        });
+
+        #screen.xs({
+            font-size: 13px;
+            margin-top: 5px;
+        })
+
     }
 
     &__company{
@@ -111,11 +152,25 @@
         font-weight: bold;
         font-size: 24px;
         font-family: "Mikado-Bold",sans-serif; 
+
+        #screen.xs({
+            font-size: 15px;
+            margin-top: 0;
+        })
     }
 
     &__skills{
         margin-top: 10px;
         font-size: 18px;
+
+        #screen.sm({
+            font-size: 15px;
+        });
+
+        #screen.xs({
+            font-size: 10px;
+            margin-top: 2px;
+        });
 
         span{
             display: inline-block;
@@ -125,6 +180,11 @@
             border-radius: 50px;
             background-color: @dark-grey;
             color: #fff;
+
+            #screen.xs-sm({
+                margin-right: 5px;
+                margin-bottom: 5px;
+            })
         }
     }
 

@@ -3,29 +3,64 @@
 .introduction{
     display: flex;
     margin-top: 100px;
-    // background-color: @dark-purple;
-    // align-items: center;
-    // justify-content: center;
-    // position: sticky;
-    // top: 0;
-    // z-index: -1;
+
+    //TODO : to be handles in jsx file
+    #screen.xs({
+        height: 600px !important;
+    });
+
+    #screen.xxs({
+        height: 400px !important;
+    });
 
     &__container{
         width: 1040px;
         margin: auto;
-        height: 600px;
+        height: calc(100vh - 100px);
         position: relative;
+
+        @media(max-width: 1040px){
+            width: 700px;
+        }
+
+        @media(max-width: 700px){
+            width: 100%;
+        }
+
+        #screen.xs({
+            height: 100%;
+            background-image: url('/public/images/home/combined-image.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 70%;
+            background-position-y: center;
+        });
     }
     
     &__designer, &__coder{
         height: 600px;
         position: absolute;
-        top: 0;
+        top: 50%;
         width: 420px;
         background-size: cover;
         background-repeat: no-repeat;
+        transform: translate(0, -50%);
+
+        @media(max-width: 1040px){
+            height: 357px;
+            transform: translate(0, -50%);
+        }
+
+        @media(max-width: 700px){
+            height: 357px;
+        }
+
+        #screen.xs({
+            display: none;
+        })
     }
     
+    //TODO : update location of these images
     &__designer{
         left: 100px;
         background-image: url('/public/images/intro.png');

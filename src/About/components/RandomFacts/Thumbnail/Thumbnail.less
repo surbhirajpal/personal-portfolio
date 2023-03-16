@@ -11,10 +11,6 @@
         height: -webkit-fill-available;
     }
 
-    // &-image, &-content{
-    //     flex: 1 1 0px;
-    // }
-
     &-image{
         position: absolute;
         bottom: 0;
@@ -22,24 +18,48 @@
         width: 20%;
         z-index: 1;
 
+        #screen.xs({
+            width: 70%;
+        });
+
         &[data-type='artist']{
             width: 25%;
+
+            #screen.xs({
+                width: 80%;
+            });
         }
 
         &[data-type='foodie']{
             width: 35%;
+
+            #screen.xs({
+                width: 100%;
+            });
         }
 
         &[data-type='mentor']{
             width: 35%;
+
+            #screen.xs({
+                width: 100%;
+            });
         }
 
         &[data-type='mermaid']{
             width: 28%;
+
+            #screen.xs({
+                width: 78%;
+            });
         }
 
         &[data-type='travel']{
             width: 20%;
+
+            #screen.xs({
+                width: 60%;
+            });
         }
     }
 
@@ -50,6 +70,22 @@
         line-height: 80px;
         font-family: "Mikado-Bold",sans-serif;
         width: 80%;
+
+        #screen.sm({
+            font-size: 40px;
+            line-height: 40px;
+        });
+
+        #screen.xs({
+            font-size: 32px;
+            line-height: 32px;
+            margin-top: -30%;
+        });
+
+        #screen.xxs({
+            font-size: 20px;
+            margin-top: -60%;
+        })
     }
     
     img{

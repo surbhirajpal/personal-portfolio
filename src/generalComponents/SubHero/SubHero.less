@@ -1,7 +1,6 @@
 @import '../../styles/global.less';
 
 .sub-hero{
-    // background: url('/public/images/home/hero-bg.jpg') no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -25,12 +24,18 @@
     }
 
     &__wrapper{
-        // padding-top: 8%;
-        // color: @dark-purple;
         text-transform: uppercase;
         font-size: 44px;
         font-family: "Mikado-Bold",sans-serif; 
         text-align: center;
+
+        #screen.xs-sm({
+            font-size: 32px;
+        });
+
+        #screen.xxs({
+            font-size: 20px;
+        })
     }
 
 

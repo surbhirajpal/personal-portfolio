@@ -26,8 +26,6 @@ const RandomFacts = () => {
     const [scrollStart, setScrollStart] = useState(0);
     const [containerWidth, setContainerWidth] = useState(0);
 
-    const windowWidth = window.innerWidth;
-
     useLayoutEffect(() => {
         scrollRef && setScrollRange(scrollRef.current.scrollWidth);
     });

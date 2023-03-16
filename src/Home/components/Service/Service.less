@@ -20,21 +20,32 @@
 
     &__content-wrapper{
         border-radius: 5px;
-        // overflow: hidden;
-
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        #screen.xs({
+            display: block;
+        })
     }
 
     &__content-holder{
         width: 40%;
+
+        #screen.xs({
+            width: 100%;
+        })
     }
 
     &__image-holder{
         width: 50%;
         position: relative;
         height: 100%;
+
+        #screen.xs({
+            width: 100%;
+            margin-top: 50%;
+        })
     }
 
     &__coder{
@@ -69,13 +80,19 @@
         font-size: 44px;
         margin-bottom: 80px;
         font-family: "Mikado-Bold",sans-serif; 
-        // color: @dark-purple;
+
+        #screen.xs({
+            font-size: 26px;
+            margin-bottom: 30px;
+        });
     }
 
     &__content{
-        // font-family: "MarkOT-Heavy",sans-serif; 
         font-size: 18px;
-        // text-align: justify;
+
+        #screen.xs({
+            font-size: 15px;
+        });
 
         p{
             margin-bottom: 15px;

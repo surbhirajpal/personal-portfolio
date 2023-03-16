@@ -1,4 +1,4 @@
-@import './styles/colors-defs.less';
+@import './styles/global.less';
 
 @background-color: #f2f0ee;
 @text-color: #58595b;
@@ -12,7 +12,6 @@ body, h1, h2, h3, h4, h5, h6, p{
 }
 
 body{
-    // background-color: @dark-purple;
     font-family: Roboto,sans-serif;
     color: @text-color;
 }
@@ -22,25 +21,22 @@ body{
   margin: auto;
   padding-left: 5rem;
   padding-right: 5rem;
+
+  #screen.sm({
+    padding-left: 3rem;
+    padding-right: 3rem;
+  });
+
+  #screen.xs({
+    padding-left: 2rem;
+    padding-right: 2rem;
+  })
 }
 
 p{
   line-height: 1.55;
 }
 
-// .portfolio{
-//   padding: 5% 0;
-
-//   &-container{
-//     width: 60%;
-//     margin: auto;
-//     padding: 40px;
-//     box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
-//     background-color: #fff;
-//     border-radius: 12px;
-//   }
-// }
-
 .padding-stripe{
-  padding: 60px 30px;
+  padding: 60px 0px;
 }

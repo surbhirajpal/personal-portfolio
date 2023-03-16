@@ -43,27 +43,33 @@ const Introduction = ({
         setContainerWidth(rect?.width);
     })
 
+    const designerWidth = ((containerWidth / 2) - variationConstant) - widthVariant;
+    const coderWidth = ((containerWidth / 2) - variationConstant) - (-widthVariant);
+
+    const designerCoderHeight = ((containerWidth / 2) - 100) * 1.428;
+
     return (
-        <section className='introduction' style={{height : sectionHeight}}>
+        <section className='introduction' style={{ height: sectionHeight }}>
             <motion.div
-                style={{ height: '600px' }}
                 onMouseMove={e => handleMouseMove(e)}
                 ref={containerRef}
                 className='introduction__container'
             >
                 <motion.div className='introduction__designer'
                     animate={{
-                        width: ((containerWidth / 2) - variationConstant) - widthVariant,
+                        width: designerWidth,
                         left: `${variationConstant - (-widthVariant)}px`,
                     }}
+                    style={{ height: designerCoderHeight }}
                 >
                 </motion.div>
 
                 <motion.div className='introduction__coder'
                     animate={{
-                        width: ((containerWidth / 2) - variationConstant) - (-widthVariant),
+                        width: coderWidth,
                         right: `${variationConstant - widthVariant}px`,
                     }}
+                    style={{ height: designerCoderHeight }}
                 >
                 </motion.div>
 

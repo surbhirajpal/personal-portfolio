@@ -1,8 +1,15 @@
+@import '../styles/global.less';
+
 .resume{
     margin-top: 100px;
     margin-bottom: 120px;
 
     .react-pdf__Page__canvas{
         margin: auto;
+
+        #screen.xs({
+            width: 80vw !important;
+            height: auto !important;
+        })
     }
 }

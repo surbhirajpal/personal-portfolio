@@ -18,6 +18,10 @@
         margin-bottom: 100px;
         font-family: "Mikado-Bold", sans-serif;
         text-align: center;
+
+        #screen.xs({
+            font-size: 26px;
+        })
     }
 
     &__wrapper{
@@ -25,6 +29,12 @@
         align-items: stretch;
         justify-content: space-between;
         margin-bottom: 200px;
+
+        #screen.xs({
+            margin-bottom: 0px;
+            flex-wrap: wrap;
+            justify-content: center;
+        })
     }
 
     &__content{
@@ -32,8 +42,13 @@
         margin-right: 40px;
         display: flex;
         align-items: center;
-
         position: relative;
+
+        #screen.xs({
+            margin-bottom: 60px;
+            margin-right: 60px;
+            flex: initial;
+        });
 
         .skills__name{
             opacity: 0;
@@ -41,6 +56,10 @@
 
         .skills__image{
             opacity: 1;
+
+            #screen.xs({
+                width: 50px;
+            })
         }
 
         &:hover{
