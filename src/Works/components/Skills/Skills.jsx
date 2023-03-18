@@ -28,7 +28,7 @@ const Skills = () => {
                                         <div className='skills__image'>
                                             <img
                                                 key={index}
-                                                src={`images/skills/${item}.png`}
+                                                src={`images/works/${item}.png`}
                                                 data-type={item}
                                             />
                                         </div>

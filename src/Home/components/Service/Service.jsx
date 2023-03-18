@@ -64,7 +64,7 @@ const Service = () => {
                                         y: '-50%',
                                     }}
                                 >
-                                    <img src={'images/service/code.svg'} />
+                                    <img src={'images/home/code.svg'} />
                                 </motion.div>
                             </div>
                             <div className='service__coding'>
@@ -75,7 +75,7 @@ const Service = () => {
                                         opacity: contentOpacity,
                                     }}
                                 >
-                                    <img src={'images/service/coding.png'} />
+                                    <img src={'images/home/coding.png'} />
                                 </motion.div>
                             </div>
                         </div>
