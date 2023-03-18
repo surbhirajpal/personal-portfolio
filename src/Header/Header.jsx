@@ -84,9 +84,9 @@ const Header = () => {
                                 />
                             </Link>
                             <div className='header-content'>
-                                <Link className='header-content__left'>
+                                <a className='header-content__left' href={'mailto:surbhirajpal88@gmail.com'}>
                                     {'contact'}
-                                </Link>
+                                </a>
                                 <div className='header-content__right'>
                                     {
                                         data.map((item, index) => {
@@ -111,7 +111,13 @@ const Header = () => {
             {
                 <div className={`slider ${showSlider ? 'show' : 'hide'}`}>
                     <div className='slider__header'>
-                        <span onClick={handleToggleClick}>{'Close'}</span>
+                        <span onClick={handleToggleClick}>
+                            <img
+                                src='images/slider/close.png'
+                                width='40px'
+                                height='40px'
+                            />
+                        </span>
                     </div>
 
                     <div className='slider__content-wrapper'>
@@ -137,6 +143,11 @@ const Header = () => {
                                 )
                             })
                         }
+                        <div className='slider__content'>
+                            <a className='header-content__left' href={'mailto:surbhirajpal88@gmail.com'}>
+                                {'Contact'}
+                            </a>
+                        </div>
                     </div>
 
                 </div>
