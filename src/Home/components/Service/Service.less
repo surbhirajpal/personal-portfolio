@@ -8,6 +8,10 @@
     background: #fafafa;
     border-bottom: #dddddd solid 1px;
 
+    #screen.xs({
+        height: 200vh;
+    });
+
     &__wrapper{
         position: sticky;
         top: 80px;
@@ -25,7 +29,7 @@
         justify-content: space-between;
 
         #screen.xs({
-            display: block;
+            flex-direction: column-reverse;
         })
     }
 
@@ -34,6 +38,7 @@
 
         #screen.xs({
             width: 100%;
+            margin-top: 35%;
         })
     }
 
@@ -44,7 +49,7 @@
 
         #screen.xs({
             width: 100%;
-            margin-top: 50%;
+            margin-top: 35%;
         })
     }
 
@@ -82,7 +87,7 @@
         font-family: "Mikado-Bold",sans-serif; 
 
         #screen.xs({
-            font-size: 26px;
+            font-size: 20px;
             margin-bottom: 30px;
         });
     }

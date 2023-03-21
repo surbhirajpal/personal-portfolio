@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import LordIcon from '../LordIcon';
+import CloseIcon from '../../public/images/slider/close.png';
 
 import './Header.less';
 
@@ -57,7 +58,7 @@ const Header = () => {
                                 <LordIcon
                                     src="https://cdn.lordicon.com/wgwcqouc.json"
                                     colors={{ primary: '#fff', secondary: '#fff' }}
-                                    size={48}
+                                    size={30}
                                     stroke={30}
                                 >
                                 </LordIcon>
@@ -68,7 +69,7 @@ const Header = () => {
                                     src="https://cdn.lordicon.com/dqxvvqzi.json"
                                     trigger="morph"
                                     colors={{ primary: '#fff', secondary: '#fff' }}
-                                    size={48}
+                                    size={30}
                                     stroke={20}
                                 />
                             </Link>
@@ -113,9 +114,11 @@ const Header = () => {
                     <div className='slider__header'>
                         <span onClick={handleToggleClick}>
                             <img
-                                src='images/slider/close.png'
-                                width='40px'
-                                height='40px'
+                                src={CloseIcon}
+                                className='slider__toggle-icon'
+                                alt='close icon'
+                                width='30px'
+                                height='30px'
                             />
                         </span>
                     </div>
