@@ -1,4 +1,5 @@
 import './Hero.less';
+import AboutHeroImage from '../../../../public/images/about/intro.png';
 
 const Hero = () => {
     const screenHeight = window.innerHeight;
@@ -15,7 +16,10 @@ const Hero = () => {
 
                     </div>
                     <div className='about-hero__image'>
-                        <img src={'images/about/intro.png'} />
+                        <img
+                            src={AboutHeroImage}
+                            alt='about hero image'
+                        />
                     </div>
                 </div>
             </div>
