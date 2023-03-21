@@ -10,6 +10,9 @@ import {
     useTransform,
 } from "framer-motion";
 
+import ServiceCodingImage from '../../../../public/images/home/coding.png';
+import ServiceCodeImage from '../../../../public/images/home/code.svg';
+
 import './Service.less';
 
 const Service = () => {
@@ -44,9 +47,6 @@ const Service = () => {
                                     opacity: contentOpacity
                                 }}
                             >
-                                {/* <div className='service__subtitle'>
-                                <p>{'FRONTEND DEVELOPER'}</p>
-                            </div> */}
                                 <div className='service__content'>
                                     <p>
                                         {`As a front-end developer, I specialize in creating and implementing the visual and interactive elements of websites and web applications. 
@@ -64,7 +64,10 @@ const Service = () => {
                                         y: '-50%',
                                     }}
                                 >
-                                    <img src={'images/home/code.svg'} />
+                                    <img
+                                        src={ServiceCodeImage}
+                                        alt='service code image'
+                                    />
                                 </motion.div>
                             </div>
                             <div className='service__coding'>
@@ -75,7 +78,10 @@ const Service = () => {
                                         opacity: contentOpacity,
                                     }}
                                 >
-                                    <img src={'images/home/coding.png'} />
+                                    <img
+                                        src={ServiceCodingImage}
+                                        alt='service coding image'
+                                    />
                                 </motion.div>
                             </div>
                         </div>
