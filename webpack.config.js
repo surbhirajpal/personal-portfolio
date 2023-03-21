@@ -3,6 +3,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: path.resolve(__dirname, './src/index.js'),
+    output: {
+        path: path.resolve(__dirname, 'build'),
+        filename: 'bundle.js',
+        // publicPath: '/',
+        // clean: true,
+    },
     module: {
         rules: [
             {
@@ -51,12 +57,11 @@ module.exports = {
     resolve: {
         extensions: ['*', '.js', '.jsx'],
     },
-    output: {
-        path: path.resolve(__dirname, './public'),
-        filename: 'bundle.js',
-        clean: true,
-    },
-    mode: 'development',
+    // devServer: {
+    //     contentBase: "./build",
+    //     historyApiFallback: true
+    // },
+    // mode: 'development',
     plugins: [
         new HtmlWebpackPlugin({
             template: './index.html'

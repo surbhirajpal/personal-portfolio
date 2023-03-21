@@ -21,10 +21,10 @@ const App = () => {
           <Header />
           <ScrollToTop />
           <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/about" element={<About />} />
-            <Route exact path="/work" element={<Works />} />
-            <Route exact path="/resume" element={<Resume />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/work" element={<Works />} />
+            <Route path="/resume" element={<Resume />} />
           </Routes>
           <Footer />
         </BrowserRouter>

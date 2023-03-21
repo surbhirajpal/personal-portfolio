@@ -25,8 +25,8 @@
     "three": "^0.147.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --mode development --hot --history-api-fallback",
-    "build": "react-scripts build",
+    "start": "webpack-dev-server --open --mode development --hot --history-api-fallback",
+    "build": "webpack --mode production",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
