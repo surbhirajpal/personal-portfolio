@@ -6,8 +6,6 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: 'bundle.js',
-        // publicPath: '/',
-        // clean: true,
     },
     module: {
         rules: [
@@ -58,12 +56,8 @@ module.exports = {
         extensions: ['*', '.js', '.jsx'],
     },
     devServer: {
-        // contentBase: "./build",
         historyApiFallback: true,
-        contentBase: './',
-        hot: true
     },
-    // mode: 'development',
     plugins: [
         new HtmlWebpackPlugin({
             template: './index.html'
