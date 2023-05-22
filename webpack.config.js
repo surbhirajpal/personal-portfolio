@@ -59,7 +59,9 @@ module.exports = {
     },
     devServer: {
         // contentBase: "./build",
-        historyApiFallback: true
+        historyApiFallback: true,
+        contentBase: './',
+        hot: true
     },
     // mode: 'development',
     plugins: [
