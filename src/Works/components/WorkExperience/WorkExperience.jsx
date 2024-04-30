@@ -22,13 +22,23 @@ const WorkExperience = () => {
         },
         {
             startDate: '11, 2020',
-            endDate: 'Present',
+            endDate: '12, 2023',
             techIcon: 'https://cdn.lordicon.com/elvincae.json',
             MainTech: 'React.js',
             designation: 'Software Developer',
             company: `Osmo (Byju's)`,
             technologies: ['React.js', 'Javascript', 'Typescript', 'Framer motion', 'LESS', 'Responsive Web design', 'Git', 'Storybook', 'HTML/CSS', 'REST API'],
             url: 'https://www.playosmo.com/en/'
+        },
+        {
+            startDate: '02, 2024',
+            endDate: 'Present',
+            techIcon: 'https://cdn.lordicon.com/ajyyzcwv.json',
+            MainTech: 'React.js, Figma',
+            designation: 'Working Student - Frontend Developer and Designer',
+            company: `Aixvox`,
+            technologies: ['React.js', 'Javascript', 'Typescript', 'Redux', 'Saga', 'REST API', 'Metronics', 'SASS', 'Figma', 'Interface Design'],
+            url: 'https://aixvox.com/'
         },
     ];
 
@@ -38,7 +48,7 @@ const WorkExperience = () => {
     const opacity1 = useTransform(scrollY, [0, 500], [0, 1]);
     const opacity2 = useTransform(scrollY, [500, 1000], [0, 1]);
 
-    const pathHeight = screenHeight / 1.5;
+    const pathHeight = screenHeight;
     const workExpHeight = pathHeight / 2;
 
     return (

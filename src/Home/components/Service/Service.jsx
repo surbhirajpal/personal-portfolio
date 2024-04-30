@@ -38,7 +38,7 @@ const Service = () => {
             <div className='service__wrapper container'>
                 <div>
                     <h1 className='service__title'>
-                        {'FRONTEND DEVELOPER'}
+                        {'FRONTEND DEVELOPER AND DESGINER'}
                     </h1>
                     <div className='service__content-wrapper'>
                         <div className='service__content-holder'>
@@ -49,9 +49,10 @@ const Service = () => {
                             >
                                 <div className='service__content'>
                                     <p>
-                                        {`As a front-end developer, I specialize in creating and implementing the visual and interactive elements of websites and web applications. 
-                            My expertise lies in React.js and responsive design, and I have a strong understanding of the latest web development trends 
-                            and technologies.`}
+                                        {`Hey! I'm Surbhi, your friendly neighborhood frontend wizard armed with React.js spells and a knack for turning ideas into pixel-perfect realities.
+                                         When I'm not diving into the React ecosystem, I'm weaving wireframes and prototypes in Figma faster than you can say 'UI/UX magic.`} 
+                                        <br/>
+                                        {`Let's collaborate and bring your digital dreams to life with a touch of React wizardry and design finesse!`}
                                     </p>
                                 </div>
                             </motion.div>

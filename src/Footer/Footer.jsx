@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faLinkedin, faInstagram, faBehance } from "@fortawesome/free-brands-svg-icons"
 
 import './Footer.less';
 
@@ -19,6 +19,11 @@ const Footer = () => {
             id: 'instagram',
             link: 'https://www.instagram.com/surbhi_rajpal_/',
             icon: faInstagram
+        },
+        {
+            id: 'behance',
+            link: 'https://www.behance.net/surbhirajpal',
+            icon: faBehance
         },
 
     ]

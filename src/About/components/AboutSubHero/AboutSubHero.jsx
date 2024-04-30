@@ -6,9 +6,9 @@ import './AboutSubHero.less';
 const AboutSubHero = () => {
     return (
         <SubHero
-            initialCopy={`Greetings earthlings! I'm a front-end developer with more than 2 years of experience, always looking for ways to `}
-            boldCopy={`add a little extra sparkle `}
-            laterCopy={`to my code. When I'm not building beautiful and responsive websites, you can find me painting, dancing or working out.`}
+            initialCopy={`Greetings earthlings! I'm a frontend developer with 3 years of experience. Currently pursuing a Master's in User Experience Design, I love`}
+            boldCopy={` crafting designs from scratch and coding them into reality `}
+            laterCopy={` with React.js. Let's create seamless digital experiences together!`}
             backgroundImageUrl={AboutHeroImage}
             customClassName='about-sub-hero'
         />

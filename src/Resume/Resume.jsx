@@ -18,6 +18,7 @@ const Resume = () => {
             <div className='container'>
                 <Document file={ResumeFile}>
                     <Page pageNumber={1} />
+                    <Page pageNumber={2} />
                 </Document>
             </div>
         </section>
